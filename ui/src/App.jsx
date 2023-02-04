@@ -14,7 +14,7 @@ function App() {
     const path = window.location.pathname
     if (path !== '/') {
       const shortname = path.substring(1)
-      fetch(`https://shorty-api.kevc.workers.dev/api/links?shortname=${shortname}`)
+      fetch(`https://api.pati.workers.dev/api/links?shortname=${shortname}`)
         .then(data => {
           if (data.status === 200) {
             return data.text()
@@ -34,7 +34,7 @@ function App() {
     e.preventDefault();
     const shortname = e.target.shortname.value
     const link = e.target.link.value
-    const data = await fetch('https://shorty-api.kevc.workers.dev/api/links', {
+    const data = await fetch('https://api.pati.workers.dev/api/links', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
