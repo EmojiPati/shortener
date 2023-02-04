@@ -1,6 +1,6 @@
-name = "shorty-api"
+name = "api"
 main = "src/index.ts"
 compatibility_date = "2022-09-02"
 kv_namespaces = [
-    { binding = "db", preview_id = "612ea7c0c9b94d9a9e30fa9117db3ff8", id = "612ea7c0c9b94d9a9e30fa9117db3ff8" }
+    { binding = "db", preview_id = "bbb9110eddd74653aacf37ede375ea28", id = "bbb9110eddd74653aacf37ede375ea28" }
 ]
